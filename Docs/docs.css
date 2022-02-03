@@ -1,0 +1,134 @@
+@import url(../CSS/navbar.css);
+
+.doc-container{
+    margin:100px auto 0;
+    max-width: 700px;
+    flex: 1 1 0%;
+
+}
+.components-div{
+    display: flex;
+}
+
+
+.intro-title{
+    color:var(--content-color);
+    font-size: 2.1rem;
+    font-weight: 900;
+    flex: 1 1 0%;
+    display: flex;
+    font-family: 'Short Stack', cursive;
+}
+
+.intro-subtitle{
+    line-height: 27px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+   color:var(--content-color);
+}
+
+.code{
+    display: block;
+    overflow-x: auto;
+    padding: 0.5rem;
+    color: #abb2bf;
+    background: #282c34;
+    max-width: 700px;
+    border-radius:6px; 
+   
+    
+}
+
+hr{
+    margin-bottom: 3rem;
+    
+
+}
+.header-example-box{
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    border-radius: 4px;
+    background-color: #F5F7F9;
+    min-height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.header-box{
+
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+
+}
+
+.hr-1{
+    margin: 0.5rem 0;
+}
+
+
+.palette{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.palette > div {
+    width: 120px;
+    height: 120px;
+    /* color: white; */
+    padding: 0.5rem;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    
+
+}
+
+.primary{
+    background-color: var(--solid-primary-color);
+    color: white;
+}
+.secondary{
+    background-color: var(--secondary-color);
+
+    color: var(--content-color);
+  
+}
+
+.danger{
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.success{
+    background-color: var(--success-color);
+    color: white;
+}
+.warning{
+    background-color: var(--warning-color);
+    color: white;
+}
+
+
+.component{
+    color: var(--solid-primary-color);
+    
+}
+.component:hover{
+
+    color: var(--secondary-color);
+}
+
