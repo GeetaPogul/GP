@@ -94,4 +94,6 @@ hr{
     background: #282c34;
     max-width: 750px;
     border-radius:6px; 
+    max-height: 200px;
+    overflow-y: scroll;
 }
