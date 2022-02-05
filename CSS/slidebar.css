@@ -6,6 +6,7 @@
     --danger-color: #F44336;
     --success-color:#4CAF50;
     --warning-color: #FF9800;   
+    --border-color :#d3d3d3;
 }
 
 a{
@@ -74,6 +75,8 @@ hr{
 .example-box{   
     border-radius: 4px;
     background-color: var(--secondary-color);
+    /* border: 1px solid var(---color); */
+    border: 1px solid lightgrey;
     min-height: 100px;
     width: 95%;
     /* display: flex; */
@@ -83,7 +86,6 @@ hr{
     margin-bottom: 1.5rem;
     
 }
-
 
 .code{
    
