@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards | Page</title>
+
+    <link rel="stylesheet" href="cards.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://kit.fontawesome.com/c9ffd32afb.js" crossorigin="anonymous"> </script>
+
+</head>
+<body>
+
+
+
+        
+    <div class="container">
+        <nav>
+          <div class="nav-section left-nav-links">
+            <div>
+              <a class="nav-a-link" href="../home/home.html"> Geeta UI</a>
+             </div>
+          </div>
+         
+          <div class="nav-section right-nav-links">
+  
+              <ul> 
+                  <li class="nav-li-links">
+                    <span >  <a class="nav-a-link" href="../home/home.html">Home</a> </span>
+                  </li>
+       
+                   <li  class="nav-li-links">
+                    <span > <a class="nav-a-link" href="../Docs/docs.html"> Docs</a>   </span>
+                   </li>
+       
+       
+                   <li  class="nav-li-links">   <span >  <button class="theme-button" id="theme-btn" > 
+                      <i class='fas fa-moon'> </i>   </button>
+                   </li>
+               </ul>
+         
+       </div>
+      </nav>
+
+
+
+    <br> <br>
+
+
+      <div class="parent-container">
+
+    
+        <div class="slidebar">
+    
+         
+          <ul class="sub-topic-list" > 
+              <h2 >Component</h2>
+      
+              <li class="list-links"> <a href="../Avatar/avatar.html" >   Avatar</li> </a>
+              <li class="list-links"> <a href="../Alert/alert.html" >  Alert</li> </a>
+              <li class="list-links"> <a href="../Badge/badge.html" >  Badge</li> </a>
+              <li class="list-links"> <a href="../Button/button.html" >  Button</li> </a>
+              <li class="list-links"> <a href="../Cards/cards.html" >  Cards</li> </a>
+              <li class="list-links"> <a href="../Image/image.html" >  Image</li> </a>
+              <li class="list-links"> <a href="../Input/input.html" >  Input</li> </a>
+          </ul>
+        </div>
+      
+      
+        <div class="doc-content">
+         <div class="content-title" > Cards </div>
+         
+         <br> 
+         <div class="content-subtitle" > 
+    
+            They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.</div>
+
+             
+            <br> <br> <hr>
+        <div class="content-title"> Simple Text Card</div> <br>
+
+        <div class="content-subtitle" > Simple Card is the one that contains a title, a descriptive text. To use the Card Component, card-title, and card-text inside a div with class card.</div>
+
+        <br> <br>
+
+
+        <div class="cards" >
+
+            <div class="card-style-container">
+                <section class="card-container" >
+                  <div class="card-image-header">
+         
+                    <header class="card-heading">
+                     <div>
+                       <h3><b>Simple Text Card </b></h3>
+                     </div> <br> 
+                     
+                     <div class="card-description">
+                       Visit ten places on our planet that are <br>undergoing the biggest changes today.
+                     </div>
+                      <br><br>
+                      </header> </div> </section> </div>
+
+
+        </div> <br>  
+
+        <div class="content-title"> HTML </div> <br>
+        
+        <div class="code-content-div"> 
+           
+            <pre> <code class="code">
+      
+           &lt;header class="card-heading"&gt;
+            &lt;div&gt;
+               &lt;h3&gt;&lt;b&gt;Simple Text Card &lt;/b&gt;&lt;/h3&gt;
+            &lt;/div&gt; &lt;br&gt; 
+                    
+            &lt;div class="card-description"&gt;
+               Visit ten places on our planet that are
+                 undergoing the biggest changes today.
+            &lt;/div&gt;
+            &lt;br&gt;&lt;br&gt;
+            &lt;/header&gt;
+      
+              </code> </pre></div> <br>
+
+              <div class="content-title" > CSS </div> <br>
+
+              
+        <div class="code-content-div"> 
+           
+            <pre> <code class="code">
+      
+           
+         .card-heading {
+
+             display: flex;
+             flex-direction: column;
+       
+         }
+
+         .card-container {
+
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: rgb(151,140,140) 0px 3px 8px;
+        
+          }
+  
+        </code> </pre></div> <br> <br> <hr>
+
+           <div class="content-title" > Card with Button</div>
+
+
+
+            <div class="cards">
+              <div class="card-style-container">
+                <section class="card-container" >
+                  <div class="card-image-header">
+         
+                    <header class="card-heading">
+                     <div>
+                       <h3><b>Simple Text Card </b></h3>
+                     </div> <br> 
+                     
+                     <div class="card-description">
+                       Visit ten places on our planet that are <br>undergoing the biggest changes today.
+                     </div>
+                      <br> <br>
+                      <div class="buttons-div" > 
+  
+                        <button>
+                           <a href="../Docs/docs.html" class=" btn btn-primary" > click</a>
+                          </button>
+                
+                        <button > <a href="#" class=" btn btn-secondary" > buy</a></button>
+                
+                      </div> <br> 
+
+                      </header> </div> </section> </div> </div>
+
+
+       <br>  
+
+        <div class="content-title"> HTML </div> <br>
+        
+        <div class="code-content-div"> 
+           
+            <pre> <code class="code">
+      
+           &lt;header class="card-heading"&gt;
+            &lt;div&gt;
+               &lt;h3&gt;&lt;b&gt;Simple Text Card &lt;/b&gt;&lt;/h3&gt;
+            &lt;/div&gt; &lt;br&gt; 
+                    
+            &lt;div class="card-description"&gt;
+               Visit ten places on our planet that are
+                 undergoing the biggest changes today.
+            &lt;/div&gt;
+            &lt;br&gt;&lt;br&gt;
+            &lt;/header&gt;
+
+            &lt;div class="buttons-div" &gt; 
+  
+                &lt;button&gt;
+                   &lt;a href="../Docs/docs.html" class=" btn btn-primary" &gt; click&lt;/a&gt;
+                  &lt;/button&gt;
+        
+                &lt;button &gt; &lt;a href="#" class=" btn btn-secondary" &gt; buy&lt;/a&gt;&lt;/button&gt;
+        
+              &lt;/div&gt; &lt;br&gt; 
+
+
+      
+              </code> </pre></div> <br>
+
+              <div class="content-title" > CSS </div> <br>
+
+              
+        <div class="code-content-div"> 
+           
+            <pre> <code class="code">
+      
+           
+           .card-heading {
+
+                 display: flex;
+                 flex-direction: column;
+       
+            }
+
+          .card-container {
+
+                 display: flex;
+                 flex-direction: column;
+                 background-color: white;
+                 padding: 1rem;
+                 border-radius: 5px;
+                 box-shadow: rgb(151,140,140) 0px 3px 8px;
+            }
+
+
+            .btn{
+                font-size: 1rem;
+                /* margin: 50%; */
+                
+                background-color: white;
+                min-width: 100px;
+                padding: 0.9rem 1.4rem;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+                box-shadow: rgb(0 0 0 / 24%)2px 6px 9px;
+            }
+            
+            button{
+                border-style: none;
+                
+            }
+            
+            .btn-primary{
+              color: white;
+              background-color: var(--solid-primary-color);
+            }
+            .btn-secondary{
+                color: var(--solid-primary-color);
+                background-color:white;
+                border: 1px solid var(--solid-primary-color);
+                
+            }
+            
+            .buttons-div{
+                margin-left: 4rem;
+            }
+  
+      
+              </code> </pre></div> <br> <br> <hr>
+
+
+
+
+
+        <div class="content-title"> Card with Image </div> <br>
+
+        <div class="cards">
+            <div class="card-style-container">
+              <section class="card-container" >
+                <div class="card-image-header">
+       
+                  <header class="card-heading">
+                   <div>
+                     <h3><b>Card with Image </b></h3>
+                   </div> <br>
+                   
+                   <img class="card-image" src="https://picsum.photos/536/354" />
+                    <br> <br>
+                    <div class="buttons-div" > 
+
+                      <button>
+                         <a href="../Docs/docs.html" class=" btn btn-primary" > click</a>
+                        </button>
+              
+                      <button > <a href="#" class=" btn btn-secondary" > buy</a></button>
+              
+                    </div> <br> 
+
+                    </header> </div> </section> </div> </div>
+
+
+     <br>  
+
+      <div class="content-title"> HTML </div> <br>
+      
+      <div class="code-content-div"> 
+         
+          <pre> <code class="code">
+    
+            &lt;div class="card-image-header"&gt;
+       
+              &lt;header class="card-heading"&gt;
+               &lt;div&gt;
+                 &lt;h3&gt;&lt;b&gt;Card with Image &lt;/b&gt; &lt;/h3&gt;
+               &lt;/div&gt; &lt;br&gt;
+               
+               &lt;img class="card-image" src="https://picsum.photos/536/354" /&gt;
+                &lt;br&gt; &lt;br&gt;
+                &lt;div class="buttons-div" &gt; 
+
+                  &lt;button&gt;
+                     &lt;a href="../Docs/docs.html" class=" btn btn-primary" &gt; click&lt;/a&gt;
+                    &lt;/button&gt;
+          
+                  &lt;button &gt; &lt;a href="#" class=" btn btn-secondary" &gt; buy&lt;/a&gt;&lt;/button&gt;
+          
+                  &lt;/div&gt; &lt;/header&gt; &lt;/div&gt; 
+
+
+    
+            </code> </pre></div> <br>
+
+            <div class="content-title" > CSS </div> <br>
+
+            
+      <div class="code-content-div"> 
+         
+          <pre> <code class="code">
+    
+         
+            .card-heading {
+
+              display: flex;
+              flex-direction: column;
+    
+         }
+
+           .card-container {
+
+              display: flex;
+              flex-direction: column;
+              background-color: white;
+              padding: 1rem;
+              border-radius: 5px;
+              box-shadow: rgb(151,140,140) 0px 3px 8px;
+         }
+
+
+          .btn{
+             font-size: 1rem;
+             /* margin: 50%; */
+             
+             background-color: white;
+             min-width: 100px;
+             padding: 0.9rem 1.4rem;
+             border-radius: 4px;
+             border: none;
+             cursor: pointer;
+             box-shadow: rgb(0 0 0 / 24%)2px 6px 9px;
+         }
+         
+           button{
+             border-style: none;
+             
+         }
+         
+          .btn-primary{
+           color: white;
+           background-color: var(--solid-primary-color);
+         }
+          .btn-secondary{
+             color: var(--solid-primary-color);
+             background-color:white;
+             border: 1px solid var(--solid-primary-color);
+             
+         }
+         
+          .buttons-div{
+             margin-left: 4rem;
+         }
+
+    
+            </code> </pre></div> <br> <br> <hr>
+
+
+
+          <div class="content-title" >    Card with Image Description.      </div> <br> 
+
+        <div class="cards" > 
+        <div class="card-style-container">
+            <section class="card-container" >
+              <div class="card-image-header">
+                
+                <img class="card-image" src="https://picsum.photos/536/354" />
+     
+                <header class="card-heading">
+                 <div>
+                   <b> Our Changing Planet </b>
+                 </div>
+                 <div>
+                    <small><p>by Kurt Wagnar </p></small><br>
+                 </div>
+                 <div class="card-description">
+                   Visit ten places on our planet that are <br>undergoing the biggest changes today.
+                 </div>
+     
+                  
+                </header><br>
+                <hr>
+                <footer class="card-btn-and-icons">
+                   <div class="card-buttons" >
+                 <button>READ</button>
+                 <button>BOOKMARK</button>
+             </div>
+     
+             <div class="card-icons">
+               
+                 <i class="fa fa-heart" ></i>
+                 <i class="fas fa-share"></i>
+                 <i class="fas fa-ellipsis-v"></i>
+             </div>
+     
+                </footer>
+            </div>
+            </section>
+            </div> </div>
+            <br>
+
+            <div class="content-title" >
+              HTML
+            </div>
+
+
+            <div class="code-content-div"> 
+         
+              <pre> <code class="code">
+        
+                &lt;div class="card-style-container"&gt;
+                  &lt;section class="card-container" &gt;
+                    &lt;div class="card-image-header"&gt;
+                      
+                      &lt;img class="card-image" src="https://picsum.photos/536/354" /&gt;
+           
+                      &lt;header class="card-heading"&gt;
+                       &lt;div&gt;
+                         &lt;b&gt; Our Changing Planet &lt;/b&gt;
+                       &lt;/div&gt;
+                       &lt;div&gt;
+                          &lt;small&gt;&lt;p&gt;by Kurt Wagnar &lt;/p&gt;&lt;/small&gt;&lt;br&gt;
+                       &lt;/div&gt;
+                       &lt;div class="card-description"&gt;
+                         Visit ten places on our planet that are &lt;br&gt;undergoing the biggest changes today.
+                       &lt;/div&gt;
+           
+                        
+                      &lt;/header&gt;&lt;br&gt;
+                      &lt;hr&gt;
+                      &lt;footer class="card-btn-and-icons"&gt;
+                         &lt;div class="card-buttons" &gt;
+                       &lt;button&gt;READ&lt;/button&gt;
+                       &lt;button&gt;BOOKMARK&lt;/button&gt;
+                   &lt;/div&gt;
+           
+                   &lt;div class="card-icons"&gt;
+                     
+                       &lt;i class="fa fa-heart" &gt;&lt;/i&gt;
+                       &lt;i class="fas fa-share"&gt;&lt;/i&gt;
+                       &lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;
+                   &lt;/div&gt;
+           
+                      &lt;/footer&gt;
+                  &lt;/div&gt;
+                  &lt;/section&gt;
+                  &lt;/div&gt; &lt;/div&gt;
+        
+                </code> </pre></div> <br>
+
+
+
+                <br> 
+
+                <div class="content-title" > CSS   </div> <br>
+
+
+                <div class="code-content-div"> 
+         
+                  <pre> <code class="code">
+            
+                 
+                    .card-heading {
+        
+                      display: flex;
+                      flex-direction: column;
+            
+                 }
+        
+                   .card-container {
+        
+                      display: flex;
+                      flex-direction: column;
+                      background-color: white;
+                      padding: 1rem;
+                      border-radius: 5px;
+                      box-shadow: rgb(151,140,140) 0px 3px 8px;
+                 }
+        
+        
+                 .card-btn-and-icons{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                   padding:0 0.5rem 0.2rem 0.5rem;
+                
+                
+                }
+                
+                .card-buttons{
+                  display: flex;
+                  flex-direction: row;
+                  gap: 5px;
+                  margin-right: auto;
+                }
+                
+                .card-buttons button:hover{
+                background-color: #fdf6f8;
+                }
+                
+                .card-buttons button{
+                  padding: 0.4rem;
+                  color: indigo;
+                  border: 1px solid white;
+                  background: white;
+                  font-size: 0.9rem;
+                  border-radius: 3px;
+                  font-weight: bold;
+                
+                  }
+                  .card-icons{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto;
+                    color: black;
+                    gap:5px;
+                
+                
+                  }
+                
+                  .card-icons i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    height: 1.9rem;
+                    width: 1.9rem;
+                    border: 1rem;
+                  }
+                  .card-icons i:hover{
+                    background-color:#f1f1f3 ;
+                }
+                
+              
+            
+                    </code> </pre></div> <br> <br> <hr>
+
+
+                    <br> <br> 
+
+
+                    <div class="content-title" >
+                      E-commerce Card
+                    </div> <br> 
+
+                    <div class="cards" > 
+                      <div class="card-style-container">
+                          <section class="card-container" >
+                            <div class="card-image-header">
+                              
+                              <img class="card-image" src="shopping.webp" /> <br>
+                   
+                              <header class="card-heading">
+                               <div>
+                                 <b> Rose pink color long gown </b> 
+                               </div> <br> 
+                              
+                               <div class="card-description">
+                                 Rose pink color long is so awesoming <br> and full in height for diffrent sizes 
+                               </div>
+                   
+                                
+                              </header><br>
+                              <hr>
+
+
+                              <div class="buttons-div  shopping" > 
+  
+                                <button>
+                                   <a href="../Docs/docs.html" class=" btn btn-primary" > Add to cart</a>
+                                  </button>
+                        
+                                <button > <a href="#" class=" btn btn-secondary" > buy now</a></button>
+                        
+                              </div> <br> 
+        
+                             </div>
+                          </section>
+                          </div> </div>
+
+
+
+
+                          <br>
+
+            <div class="content-title" >
+              HTML
+            </div>
+
+
+            <div class="code-content-div"> 
+         
+              <pre> <code class="code">
+        
+                &lt;div class="card-style-container"&gt;
+                  &lt;section class="card-container" &gt;
+                    &lt;div class="card-image-header"&gt;
+                      
+                      &lt;img class="card-image" src="shopping.webp" /&gt; &lt;br&gt;
+           
+                      &lt;header class="card-heading"&gt;
+                       &lt;div&gt;
+                         &lt;b&gt; Rose pink color long gown &lt;/b&gt; 
+                       &lt;/div&gt; &lt;br&gt; 
+                      
+                       &lt;div class="card-description"&gt;
+                         Rose pink color long is so awesoming 
+                          and full in height for diffrent sizes 
+                       &lt;/div&gt;
+           
+                        
+                      &lt;/header&gt;&lt;br&gt;
+                      &lt;hr&gt;
+
+
+                      &lt;div class="buttons-div  shopping" &gt; 
+
+                        &lt;button&gt;
+                           &lt;a href="../Docs/docs.html" class=" btn btn-primary" &gt; Add to cart&lt;/a&gt;
+                          &lt;/button&gt;
+                
+                        &lt;button &gt; &lt;a href="#" class=" btn btn-secondary" &gt; buy now&lt;/a&gt;&lt;/button&gt;
+                
+                      &lt;/div&gt; &lt;br&gt; 
+
+                     &lt;/div&gt;
+                  &lt;/section&gt;
+                  &lt;/div&gt; &lt;/div&gt;
+
+
+
+
+                </code> </pre></div> <br>
+
+
+
+                
+
+                <div class="content-title" > CSS   </div> 
+
+
+
+                <div class="code-content-div"> 
+         
+                  <pre> <code class="code">
+            
+                 
+                    .card-heading {
+        
+                      display: flex;
+                      flex-direction: column;
+            
+                 }
+        
+                   .card-container {
+        
+                      display: flex;
+                      flex-direction: column;
+                      background-color: white;
+                      padding: 1rem;
+                      border-radius: 5px;
+                      box-shadow: rgb(151,140,140) 0px 3px 8px;
+                 }
+        
+        
+                  .btn{
+                     font-size: 1rem;
+                     /* margin: 50%; */
+                     
+                     background-color: white;
+                     min-width: 100px;
+                     padding: 0.9rem 1.4rem;
+                     border-radius: 4px;
+                     border: none;
+                     cursor: pointer;
+                     box-shadow: rgb(0 0 0 / 24%)2px 6px 9px;
+                 }
+                 
+                   button{
+                     border-style: none;
+                     
+                 }
+                 
+                  .btn-primary{
+                   color: white;
+                   background-color: var(--solid-primary-color);
+                 }
+                  .btn-secondary{
+                     color: var(--solid-primary-color);
+                     background-color:white;
+                     border: 1px solid var(--solid-primary-color);
+                     
+                 }
+                 
+                  .buttons-div{
+                     margin-left: 4rem;
+                 }
+        
+            
+                    </code> </pre></div> <br> <br> <hr>
+        
+        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                        </div>
+              
+    
+
+
+
+
+
+
+
+</body>
+</html>
