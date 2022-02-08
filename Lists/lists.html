@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists | Page</title>
+
+    <link rel="stylesheet" href="lists.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://kit.fontawesome.com/c9ffd32afb.js" crossorigin="anonymous"> </script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+          <div class="nav-section left-nav-links">
+            <div>
+              <a class="nav-a-link" href="../home/home.html"> Geeta UI</a>
+             </div>
+          </div>
+         
+          <div class="nav-section right-nav-links">
+  
+              <ul> 
+                  <li class="nav-li-links">
+                    <span >  <a class="nav-a-link" href="../home/home.html">Home</a> </span>
+                  </li>
+       
+                   <li  class="nav-li-links">
+                    <span > <a class="nav-a-link" href="../Docs/docs.html"> Docs</a>   </span>
+                   </li>
+       
+       
+                   <li  class="nav-li-links">   <span >  <button class="theme-button" id="theme-btn" > 
+                      <i class='fas fa-moon'> </i>   </button>
+                   </li>
+               </ul>
+         
+       </div>
+      </nav>
+
+
+
+    <br> <br>
+
+
+      <div class="parent-container">
+
+    
+        <div class="slidebar">
+    
+         
+          <ul class="sub-topic-list" > 
+              <h2 >Component</h2>
+      
+              <li class="list-links"> <a href="../Avatar/avatar.html" >   Avatar</li> </a>
+              <li class="list-links"> <a href="../Alert/alert.html" >  Alert</li> </a>
+              <li class="list-links"> <a href="../Badge/badge.html" >  Badge</li> </a>
+              <li class="list-links"> <a href="../Button/button.html">  Button</li> </a>
+              <li class="list-links"> <a href="../Cards/cards.html" >  Card</li> </a>
+              <li class="list-links"> <a href="../Image/image.html" >  Image</li> </a>
+              <li class="list-links"> <a href="../Input/input.html" >  Input</li> </a>
+              <li class="list-links"> <a href="../Typography/typograpgy.html" >  Typograpgy</li> </a>
+              <li class="list-links"> <a href="../Lists/lists.html" >  List</li> </a>
+              
+          
+          </ul>
+        </div>
+
+
+        <div class="doc-content">
+            <div class="content-title" > Avatar</div>
+            
+            <br> 
+            <div class="content-subtitle" > 
+             Lists can be used at so many places, navigation bar, article pages,etc.
+            There are two types of Lists
+       
+         </div>
+
+          <div class="content-title" >
+            <b> Example of Unordered list with Bullets. </b>
+         </div> <br>
+       
+       
+        <hr> 
+
+
+        <div class="list-container">
+         <ul class="styled-list">
+           <li> List item1</li>
+           <li> List item2</li>
+           <li> List item3</li>
+        
+         </ul>
+
+         <ul class="styled-list list-style-square">
+          <li> List item1</li>
+          <li> List item2</li>
+          <li> List item3</li>
+        
+        </ul>
+
+        <ul class="styled-list list-style-circle">
+          <li> List item1</li>
+          <li> List item2</li>
+          <li> List item3</li>
+        
+        </ul> </div>
+      
+
+        <div class="content-title"> HTML</div>
+
+        <div class="code-content-div"> 
+       
+          <pre>
+            <code class="code">
+    
+              &lt;div class="list-container"&gt;
+                &lt;ul class="styled-list"&gt;
+                  &lt;li&gt; List item1&lt;/li&gt;
+                  &lt;li&gt; List item2&lt;/li&gt;
+                  &lt;li&gt; List item3&lt;/li&gt;
+               
+                &lt;/ul&gt;
+       
+                &lt;ul class="styled-list list-style-square"&gt;
+                 &lt;li&gt; List item1&lt;/li&gt;
+                 &lt;li&gt; List item2&lt;/li&gt;
+                 &lt;li&gt; List item3&lt;/li&gt;
+               
+               &lt;/ul&gt;
+       
+               &lt;ul class="styled-list list-style-circle"&gt;
+                 &lt;li&gt; List item1&lt;/li&gt;
+                 &lt;li&gt; List item2&lt;/li&gt;
+                 &lt;li&gt; List item3&lt;/li&gt;
+               
+               &lt;/ul&gt; &lt;/div&gt;
+
+</code></pre></div> <br> <br> 
+
+<div class="content-title" >
+  CSS
+</div> 
+
+<div class="code-content-div"> 
+       
+  <pre>
+    <code class="code">
+      .list-container{
+        display: flex;
+        flex-wrap:wrap;
+        padding: 1rem;
+        margin: 2rem 0;
+        border:2px solid grey;
+        align-items: baseline;
+        border-radius: 0.3rem;
+        width:90%;
+        background-color: var(--secondary-color);
+    }
+    
+    .styled-list{
+        margin:2rem 2rem 2rem 6rem;
+        line-height: 2.5rem;
+    }
+    
+    .list-style-square{
+        list-style-type: square;
+    }
+    
+    .list-style-circle{
+        list-style-type: circle;
+    }
+
+</code></pre></div> <br> <br> <hr>
+
+
+<div class="content-title" >
+  <b> Example of Ordered list with Bullets. </b>
+</div> <br>
+
+
+
+
+
+<div class="list-container">
+         <ol class="styled-list ">
+           <li> List item with numbers</li>
+           <li> List item with numbers</li>
+           <li> List item with numbers</li>
+        
+         </ol>
+
+         <ol class="styled-list " type="a" >
+          <li> Reversed List item</li>
+          <li> Reversed List item</li>
+          <li> Reversed List item</li>
+        
+        </ol>
+
+        <ol class="styled-list " type="a" reversed>
+          <li> List item with alphabets</li>
+          <li> List item with alphabets</li>
+          <li> List item with alphabets</li>
+        
+        </ol>
+
+        <ol class="styled-list" type="I">
+          <li> List item with roman</li>
+          <li> List item with roman</li>
+          <li> List item with roman</li>
+       
+        </ol>
+
+        <ol class="styled-list " type="i">
+         <li> List item alphabets</li>
+         <li> List item alphabets</li>
+         <li> List item alphabets</li>
+       
+       </ol>
+
+       <ol class="styled-list " type="A">
+         <li> List item with Roman</li>
+         <li> List item with Roman</li>
+         <li> List item with Roman</li>
+       
+       </ol>
+      
+      </div>
+
+      
+
+
+         <div class="content-title">
+          HTML
+        </div>
+
+
+        <div class="code-content-div"> 
+       
+          <pre>
+            <code class="code">
+              &lt;ol class="styled-list "&gt;
+                &lt;li&gt; List item with numbers&lt;/li&gt;
+                &lt;li&gt; List item with numbers&lt;/li&gt;
+                &lt;li&gt; List item with numbers&lt;/li&gt;
+             
+              &lt;/ol&gt;
+     
+              &lt;ol class="styled-list " type="a" &gt;
+               &lt;li&gt; Reversed List item&lt;/li&gt;
+               &lt;li&gt; Reversed List item&lt;/li&gt;
+               &lt;li&gt; Reversed List item&lt;/li&gt;
+             
+             &lt;/ol&gt;
+     
+             &lt;ol class="styled-list " type="a" reversed&gt;
+               &lt;li&gt; List item with alphabets&lt;/li&gt;
+               &lt;li&gt; List item with alphabets&lt;/li&gt;
+               &lt;li&gt; List item with alphabets&lt;/li&gt;
+             
+             &lt;/ol&gt;
+     
+             &lt;ol class="styled-list" type="I"&gt;
+               &lt;li&gt; List item with roman&lt;/li&gt;
+               &lt;li&gt; List item with roman&lt;/li&gt;
+               &lt;li&gt; List item with roman&lt;/li&gt;
+            
+             &lt;/ol&gt;
+     
+             &lt;ol class="styled-list " type="i"&gt;
+              &lt;li&gt; List item alphabets&lt;/li&gt;
+              &lt;li&gt; List item alphabets&lt;/li&gt;
+              &lt;li&gt; List item alphabets&lt;/li&gt;
+            
+            &lt;/ol&gt;
+     
+            &lt;ol class="styled-list " type="A"&gt;
+              &lt;li&gt; List item with Roman&lt;/li&gt;
+              &lt;li&gt; List item with Roman&lt;/li&gt;
+              &lt;li&gt; List item with Roman&lt;/li&gt;
+            
+            &lt;/ol&gt;
+
+            </code></pre></div> <br> <br>  <hr> <br>
+
+            <div class="content-title">
+              Example of List with no Bullets
+            </div> <br>
+
+
+            <div class="circle-avatar"> 
+      <ul class="styled-list list-style-none"> 
+              <li>list item1</li>
+              <li>list item2</li>
+              <li>list item3</li>
+          </ul>
+          </div> 
+
+          <div class="content-title"> HTML</div>
+
+          <div class="code-content-div"> 
+       
+            <pre>
+
+              <code class="code">
+                
+          &lt;ul class="styled-list list-style-none"&gt;
+
+            &lt;li&gt;list item1&lt;/li&gt;
+            &lt;li&gt;list item2&lt;/li&gt;
+            &lt;li&gt;list item3&lt;/li&gt;
+          
+          &lt;/ul&gt;
+                
+          
+          </code></pre></div> <br> <br> <hr>
+          
+
+
+
+
+
+
+          <!-- <div class="code-content-div"> 
+       
+            <pre>
+              <code class="code">
+
+            
+              <ul class="styled-list list-style-none"> 
+                  <li>list item1</li>
+                  <li>list item2</li>
+                  <li>list item3</li>
+              </ul>
+            </div>
+            
+                
+          
+          </code></pre></div> <br> <br> -->
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        </div> 
+    
+</body>
+</html>
