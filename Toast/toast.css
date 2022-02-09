@@ -1,0 +1,62 @@
+@import url(../CSS/navbar.css);
+
+@import url(../CSS/slidebar.css);
+
+
+
+.toast{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem;
+    padding-left: 1rem;
+    max-width: 700px;
+    border-radius: 10px;
+     /* background-color: var(--success-color); */
+    color: white;
+   
+  }
+
+
+  .toast-icon{
+    border: none;
+    background: transparent;
+    font-weight: 600; height:1.5rem;
+    padding:  2px 11px;
+    color:white;
+    cursor: pointer;
+    border-radius: 30px;
+    text-transform: uppercase;
+      
+  }
+  
+  .toast-icon:hover{
+    background-color: hsla(0, 4%, 44%, 0.1);
+  }
+
+  .toast-box{
+     
+      display: flex;
+      width: max-content;
+      background-color: var(--secondary-color);
+      border: 1px solid darkgrey;
+      padding: 2rem;
+          
+  }
+
+  
+  .toast-success{
+    background-color: var(--success-color);
+    margin-left: 1rem;
+    }
+
+  .toast-warning{
+  background-color: blue;
+  margin-left: 1rem;
+  }
+
+  
+  .toast-error{
+    background-color: var(--danger-color);
+    margin-left: 1rem;
+    }
