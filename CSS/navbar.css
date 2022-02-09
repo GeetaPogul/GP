@@ -21,13 +21,14 @@ body{
     font-family: 'Short Stack',cursive;
     color:var(--content-color);
     
-}nav{
+}
+nav{
    
     background-color: var(--solid-primary-color);
     padding: 1.7rem;
     display: flex;
+    width: 96%;
     align-items: center;
-    
     font-weight: bold;
     justify-content:flex-start;
     box-shadow: rgb(0 0 0 / 24%)2px 4px 5px;
@@ -38,8 +39,7 @@ body{
     align-items: center;
     font-weight: bold;
     font-size: 1.3rem;
-    /* color: white; */
-    /* background-color: pink; */
+    
 }
 .nav-li-links{
     display: inline;
@@ -78,4 +78,39 @@ body{
 a {
     text-decoration: none;
     
+}
+
+
+/* mobile view */
+
+@media only screen and (max-width: 600px) {
+    .list-links{
+    
+        align-items: center;
+        padding: 1.2rem 1.5rem;
+        list-style: none;
+        font-size: 14px;
+       
+        
+    }
+    .list-links:hover{
+        
+        background:#ede9fe;
+        cursor: pointer;
+    }
+    .sub-topic-list{
+        height: 40%;
+        width:100px;
+        margin-left: 1rem;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .doc-content{
+    
+            padding-left: 1rem;
+            max-width: 400px; 
+            font-size: 12px;  
+        }
 }

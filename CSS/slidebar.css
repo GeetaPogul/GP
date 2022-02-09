@@ -46,9 +46,7 @@ a{
 .doc-content{
     
     padding-left: 2rem;
-    max-width: 700px;
-    /* background-color: green; */
-   
+    max-width: 700px;   
 }
 
 
@@ -76,7 +74,6 @@ hr{
 .example-box{   
     border-radius: 4px;
     background-color: var(--secondary-color);
-    /* border: 1px solid var(---color); */
     border: 1px solid lightgrey;
     min-height: 100px;
     width: 95%;
@@ -114,4 +111,39 @@ hr{
     padding: 1rem;
     margin-bottom: 1.5rem;
     
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .list-links{
+    
+        align-items: center;
+        padding: 1.2rem 1.5rem;
+        list-style: none;
+        font-size: 14px;
+       
+        
+    }
+    .list-links:hover{
+        
+        background:#ede9fe;
+        cursor: pointer;
+    }
+    .sub-topic-list{
+        height: 40%;
+        width:100px;
+        margin-left: 1rem;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .doc-content{
+    
+            padding-left: 1rem;
+            max-width: 400px; 
+            font-size: 12px;  
+        }
 }
