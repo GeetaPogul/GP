@@ -2,7 +2,7 @@
 
 @import url(../CSS/slidebar.css);
 
-img{
+.img{
     height: 60px;
     width: 60px;
      
@@ -107,7 +107,7 @@ img{
 
 
 
-/* Text badge  style*/
+
 
 .primary-btn{
     background-color: var(--warning-color);
