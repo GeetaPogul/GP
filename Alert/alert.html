@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Alert | Page</title>
+
+    <link rel="stylesheet" href="alert.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://kit.fontawesome.com/c9ffd32afb.js" crossorigin="anonymous"> 
+    </script>
+
+</head>
+<body>
+
+    <nav>
+        <div class="nav-section left-nav-links">
+          <div>
+            <a class="nav-a-link" href="../home/home.html"> Geeta UI</a>
+           </div>
+        </div>
+       
+        <div class="nav-section right-nav-links">
+    
+            <ul> 
+                <li class="nav-li-links">
+                  <span >  <a class="nav-a-link" href="../home/home.html">Home</a> </span>
+                </li>
+     
+                 <li  class="nav-li-links">
+                  <span > <a class="nav-a-link" href="../Docs/docs.html"> Docs</a>   </span>
+                 </li>
+     
+     
+                 <li  class="nav-li-links">   <span >  <button class="theme-button" id="theme-btn" > 
+                    <i class='fas fa-moon'> </i>   </button>
+                 </li>
+             </ul>
+       
+     </div>
+    </nav>
+    
+    <br> <br> 
+
+
+    <div class="parent-container">
+
+        <div class="slidebar">
+
+            <ul class="sub-topic-list" > 
+                  <h2 >Component</h2>
+          
+                  <li class="list-links"> <a href="../Avatar/avatar.html" >   Avatar</li> </a>
+                  <li class="list-links"> <a href="../Alert/alert.html" >  Alert</li> </a>
+                  <li class="list-links"> <a href="../Badge/badge.html" >  Badge</li> </a>
+                  <li class="list-links"> <a href="../Button/button.html" >  Button</li> </a>
+                  <li class="list-links"> <a href="../Cards/cards.html" >  Cards</li> </a>
+                  <li class="list-links"> <a href="../Image/image.html" >  Image</li> </a>
+                  <li class="list-links"> <a href="../Input/input.html" >  Input</li> </a>
+                  <li class="list-links"> <a href="../Lists/lists.html" >  List</li> </a>
+                  <li class="list-links"> <a href="../Rating/rating.html" > Rating</li> </a>
+                  <li class="list-links"> <a href="../Toast/toast.html" > Toast</li> </a>
+                  <li class="list-links"> <a href="../Typography/typography.html" >  Typography</li> </a>
+                  
+              </ul>
+            </div>
+  
+
+    <div class="doc-content">
+        <div class="content-title" > Alert</div>
+        
+        <br> 
+        <div class="content-subtitle" > 
+   
+         An Alert  displays a  short important message in a way that attracts the user's attention  without  interrupting the user's task.
+        </div>
+
+
+        <hr>
+
+
+        <div class="content-title" > Simple Alert</div>
+        
+        <br> 
+        <div class="content-subtitle" > 
+   
+        Simple Alerts can be created using alert class, followed by the variant name.
+
+        </div>
+
+        <div class="example-box" > 
+             
+            <div class="alert-box primary" > 
+                <strong> Primary !</strong> This is a Primary Alert - Check it now!
+            </div>
+            <br>
+
+            <div class="alert-box error" > 
+                <strong> Error !</strong> This is a error Alert - Check it now!
+            </div> <br>
+
+            <div class="alert-box success" > 
+                <strong> Error !</strong> This is a error Alert - Check it now!
+            </div> <br>
+
+
+            <div class="alert-box warning" > 
+                <strong> Error !</strong> This is a error Alert - Check it now!
+            </div> <br>
+        </div>
+
+        <br>
+        
+
+        <div class="content-title">
+            HTML
+        </div>
+
+        
+
+        <div class="code-content-div"> 
+       
+            <pre>
+              <code class="code">
+      
+                <-- Using the alert-box class followed by the vvariant name -->
+                <-- html -->
+      
+                &lt;div class="alert-box primary" &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+
+                &lt;div &gt;    
+
+      
+                &lt;div class="alert-box danger &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+                     
+                &lt;div &gt;
+
+
+                &lt;div class="alert-box success" &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+                     
+                &lt;div &gt;
+
+
+
+                &lt;div class="alert-box warning" &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+                     
+                &lt;div &gt;
+
+
+
+                
+            
+              </code>
+            
+              </pre>
+              
+            </div>
+
+
+
+
+
+
+            <div class="content-title">
+                CSS
+            </div>
+            
+        <div class="code-content-div"> 
+       
+            <pre>
+              <code class="code">
+      
+               
+            <-- css -->
+
+
+            .primary{
+                background-color: var(--solid-primary-color);
+                color:white
+            }               
+            
+              </code>
+            
+              </pre>
+              
+            </div>
+
+
+
+
+
+
+
+
+
+            
+
+
+        
+        <div class="content-title" > Outline Alert</div>
+        
+        <br> 
+        <div class="content-subtitle" > 
+   
+        Simple Alerts can be created using alert class, followed by the variant name.
+
+        </div>
+
+
+        <div class="example-box" > 
+             
+            <div class="alert-box outline-primary" > 
+                <strong> Primary !</strong> This is a Primary Alert - Check it now!
+            </div>
+            <br>
+
+            <div class="alert-box outline-danger" > 
+                <strong> Error !</strong> This is a error Alert - Check it now!
+            </div> <br>
+
+            <div class="alert-box outline-success" > 
+                <strong> Error !</strong> This is a error Alert - Check it now!
+            </div> <br>
+
+
+            <div class="alert-box outline-warning" > 
+                <strong> Error !</strong> This is a error Alert - Check it now!
+            </div> <br>
+        </div>
+  <br>
+        <div class="content-title">
+            HTML
+        </div>
+
+
+
+
+        <div class="code-content-div"> 
+       
+            <pre>
+              <code class="code">
+      
+                <-- Using the alert-box class followed by the vvariant name -->
+      
+      
+                &lt;div class="alert-box outline-primary" &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+
+                &lt;div &gt;    
+
+      
+                &lt;div class="alert-box outline-danger &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+                     
+                &lt;div &gt;
+
+
+                &lt;div class="alert-box outline-success" &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+                     
+                &lt;div &gt;
+
+
+
+                &lt;div class="alert-box outline-warning" &gt;
+
+                     &lt;strong&gt;Primary ! &lt;strong&gt; This is  Primary alert - check it now
+                     
+                &lt;div &gt;
+            
+              </code>
+            
+              </pre>
+              
+            </div>
+
+
+
+
+
+
+            <div class="content-title">
+                CSS
+            </div>
+            <div class="code-content-div"> 
+       
+                <pre>
+                  <code class="code">
+          
+                   
+                <-- css -->
+    
+    
+                .outline-primary{
+                    background-color: var(--solid-primary-color);
+                    color:white
+                }               
+                
+                  </code>
+                
+                  </pre>
+                  
+                </div>
+      
+
+
+
+
+
+
+
+
+   
+    </div>
+
+    
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating |  Page</title>
+
+    <link rel="stylesheet" href="rating.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://kit.fontawesome.com/c9ffd32afb.js" crossorigin="anonymous"> </script>
+
+</head>
+<body>
+
+
+
+        
+    <div class="container">
+        <nav>
+          <div class="nav-section left-nav-links">
+            <div>
+              <a class="nav-a-link" href="../home/home.html"> Geeta UI</a>
+             </div>
+          </div>
+         
+          <div class="nav-section right-nav-links">
+  
+              <ul> 
+                  <li class="nav-li-links">
+                    <span >  <a class="nav-a-link" href="../home/home.html">Home</a> </span>
+                  </li>
+       
+                   <li  class="nav-li-links">
+                    <span > <a class="nav-a-link" href="../Docs/docs.html"> Docs</a>   </span>
+                   </li>
+       
+       
+                   <li  class="nav-li-links">   <span >  <button class="theme-button" id="theme-btn" > 
+                      <i class='fas fa-moon'> </i>   </button>
+                   </li>
+               </ul>
+         
+       </div>
+      </nav>
+
+
+
+    <br> <br>
+
+
+      <div class="parent-container">
+
+    
+        <div class="slidebar">
+
+            <ul class="sub-topic-list" > 
+                  <h2 >Component</h2>
+          
+                  <li class="list-links"> <a href="../Avatar/avatar.html" >   Avatar</li> </a>
+                  <li class="list-links"> <a href="../Alert/alert.html" >  Alert</li> </a>
+                  <li class="list-links"> <a href="../Badge/badge.html" >  Badge</li> </a>
+                  <li class="list-links"> <a href="../Button/button.html" >  Button</li> </a>
+                  <li class="list-links"> <a href="../Cards/cards.html" >  Cards</li> </a>
+                  <li class="list-links"> <a href="../Image/image.html" >  Image</li> </a>
+                  <li class="list-links"> <a href="../Input/input.html" >  Input</li> </a>
+                  <li class="list-links"> <a href="../Lists/lists.html" >  List</li> </a>
+                  <li class="list-links"> <a href="../Rating/rating.html" > Rating</li> </a>
+                  <li class="list-links"> <a href="../Toast/toast.html" > Toast</li> </a>
+                  <li class="list-links"> <a href="../Typography/typography.html" >  Typography</li> </a>
+                  
+              </ul>
+            </div>
+      
+      
+        <div class="doc-content">
+         <div class="content-title" > Rating </div>
+         
+         <br> 
+         <div class="content-subtitle" > 
+    
+            Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.
+     
+         </div> 
+         <br> 
+ 
+     <hr> 
+        
+     <div class="rating-container"> 
+
+
+       <div class="rating-star-container">
+        <label>
+            <input class="rating-star-input" type="checkbox" checked disabled >
+            <i class="fas fa-star rating-star-icon"></i>
+        </label>
+        <label>
+            <input class="rating-star-input" type="checkbox" checked disabled>
+            <i class="fas fa-star rating-star-icon"></i>
+        </label>
+        <label>
+            <input class="rating-star-input" type="checkbox" checked disabled>
+            <i class="fas fa-star rating-star-icon"></i>
+        </label>
+        <label>
+            <input class="rating-star-input" type="checkbox" disabled >
+            <i class="fas fa-star rating-star-icon-blank"></i>
+        </label>
+        <label>
+            <input class="rating-star-input" type="checkbox" disabled >
+            <i class="fas fa-star rating-star-icon-blank"></i>
+        </label>
+    </div>
+    
+   
+
+
+     <div class="rating-badge">
+        <span class="rating-badge-number">3</span>
+        <span class="rating-badge-star">
+            <i class="fas fa-star star-icon"></i></span>
+        <span class="rating-badge-number">|</span>
+        <span class="rating-badge-number">5</span>
+    </div>
+
+    </div> <br> <br>
+
+
+
+    <div class="content-title"> HTML    </div>
+
+
+    <div class="code-content-div"> 
+       
+        <pre><code class="code" > 
+    
+            &lt;div class="rating-container"&gt; 
+
+
+                &lt;div class="rating-star-container"&gt;
+                 &lt;label&gt;
+                     &lt;input class="rating-star-input" type="checkbox" checked disabled &gt;
+                     &lt;i class="fas fa-star rating-star-icon"&gt;&lt;/i&gt;
+                 &lt;/label&gt;
+                 &lt;label&gt;
+                     &lt;input class="rating-star-input" type="checkbox" checked disabled&gt;
+                     &lt;i class="fas fa-star rating-star-icon"&gt;&lt;/i&gt;
+                 &lt;/label&gt;
+                 &lt;label&gt;
+                     &lt;input class="rating-star-input" type="checkbox" checked disabled&gt;
+                     &lt;i class="fas fa-star rating-star-icon"&gt;&lt;/i&gt;
+                 &lt;/label&gt;
+                 &lt;label&gt;
+                     &lt;input class="rating-star-input" type="checkbox" disabled &gt;
+                     &lt;i class="fas fa-star rating-star-icon-blank"&gt;&lt;/i&gt;
+                 &lt;/label&gt;
+                 &lt;label&gt;
+                     &lt;input class="rating-star-input" type="checkbox" disabled &gt;
+                     &lt;i class="fas fa-star rating-star-icon-blank"&gt;&lt;/i&gt;
+                 &lt;/label&gt;
+             &lt;/div&gt;
+             
+            
+         
+         
+              &lt;div class="rating-badge"&gt;
+                 &lt;span class="rating-badge-number"&gt;3&lt;/span&gt;
+                 &lt;span class="rating-badge-star"&gt;&lt;i class="fas fa-star star-icon"&gt;&lt;/i&gt;&lt;/span&gt;
+                 &lt;span class="rating-badge-number"&gt;|&lt;/span&gt;
+                 &lt;span class="rating-badge-number"&gt;5&lt;/span&gt;
+             &lt;/div&gt;
+         
+             &lt;/div&gt; &lt;br&gt;
+
+
+                    
+        </code> </pre> </div> <br>
+
+        <div class="content-title" > CSS </div> <br>
+
+        <div class="code-content-div"> 
+
+            <pre>
+           
+              <code class="code">
+                .rating-container{
+                    display: flex;
+                    background-color: var(--secondary-color);
+                    border: 1px solid var(--border-color);
+                    padding: 2rem;
+                }
+                
+                
+                .rating-star-container{
+                    
+                     display: flex;
+                     width: max-content;
+                     /* background-color: red; */
+                     padding: 0.2rem;
+                }
+                
+                
+                .rating-star-input, .rating-star-icon{
+                    color:var(--rating-star-color);
+                    font-size:1.5rem;
+                }
+                
+                input{
+                    display: none;
+                }
+                
+                .rating-star-icon-blank{
+                    color:lightgrey;
+                    font-size:1.5rem;
+                    
+                }
+                
+                
+                
+                
+                /* badge style */
+                
+                .rating-badge {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: fit-content;
+                    font-size: 0.85rem;
+                    line-height: 0.75rem;
+                    color:black;
+                    padding: 0.5rem;
+                    margin-left: 1.5rem;
+                }
+                
+                .star-icon{
+                    color: var(--rating-star-color);
+                }
+            </code>
+            
+              </pre> </div> <br> <hr>
+           
+          
+        
+
+    
+</body>
+</html>

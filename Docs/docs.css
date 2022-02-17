@@ -124,11 +124,14 @@ hr{
 
 
 .component{
-    color: var(--solid-primary-color);
+    
+    color: grey;
+    font-size: 2.5rem;
     
 }
 .component:hover{
 
-    color: var(--secondary-color);
+    color:var(--solid-primary-color);
 }
+
 

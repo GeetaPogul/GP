@@ -1,0 +1,32 @@
+@import url(../CSS/navbar.css);
+@import url(../CSS/slidebar.css);
+
+.images{
+    margin: 15px 25px;
+    height: 150px;
+    width: 150px;    
+}
+
+.round-images{
+    margin: 15px 25px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.image-box{   
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    min-height: 100px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.full-img{
+    margin: 2rem 0 2rem 0;
+}
