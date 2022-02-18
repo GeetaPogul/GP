@@ -1,3 +1,7 @@
+:root{
+  --hover-color:#f1f1f3;
+}
+
 .card-style-container{
     display: flex;
     flex-direction: column;
@@ -91,7 +95,7 @@
       border: 1rem;
     }
     .card-icons i:hover{
-      background-color:#f1f1f3 ;
+      background-color:var(--hover-) ;
   }
   
 
