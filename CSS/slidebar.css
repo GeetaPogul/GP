@@ -24,7 +24,7 @@ a{
 .list-links{
     
     align-items: center;
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1.1rem;
     font-size: 1.2rem;
     list-style: none;
    
@@ -33,11 +33,12 @@ a{
 .list-links:hover{
     
     background:#ede9fe;
+    border-radius: 4px;
     cursor: pointer;
 }
 .sub-topic-list{
     height: 40%;
-    width:240px;
+    width:220px;
     margin-left: 10rem;
     display: flex;
     flex-direction: column;
