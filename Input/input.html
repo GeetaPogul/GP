@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input | Page</title>
+
+    <link rel="stylesheet" href="input.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://kit.fontawesome.com/c9ffd32afb.js" crossorigin="anonymous"> </script>
+
+</head>
+<body>
+
+
+
+        
+    <div class="container">
+        <nav>
+          <div class="nav-section left-nav-links">
+            <div>
+              <a class="nav-a-link" href="../index.html" > Geeta UI</a>
+             </div>
+          </div>
+         
+          <div class="nav-section right-nav-links">
+  
+              <ul> 
+                  <li class="nav-li-links">
+                    <span >  <a class="nav-a-link" href="../index.html" > Home</a> </span>
+                  </li>
+       
+                   <li  class="nav-li-links">
+                    <span > <a class="nav-a-link" href="../Docs/docs.html"> Docs</a>   </span>
+                   </li>
+       
+       
+                   <li  class="nav-li-links">   <span >  <button class="theme-button" id="theme-btn" > 
+                      <i class='fas fa-moon'> </i>   </button>
+                   </li>
+               </ul>
+         
+       </div>
+      </nav>
+
+
+
+    <br> <br>
+
+
+      <div class="parent-container">
+
+    
+        <div class="slidebar">
+
+            <ul class="sub-topic-list" > 
+                  <h2 >Components</h2>
+          
+                  <li class="list-links"> <a href="../Avatar/avatar.html" >   Avatar</li> </a>
+                  <li class="list-links"> <a href="../Alert/alert.html" >  Alert</li> </a>
+                  <li class="list-links"> <a href="../Badge/badge.html" >  Badge</li> </a>
+                  <li class="list-links"> <a href="../Button/button.html" >  Button</li> </a>
+                  <li class="list-links"> <a href="../Cards/cards.html" >  Cards</li> </a>
+                  <li class="list-links"> <a href="../Image/image.html" >  Image</li> </a>
+                  <li class="list-links"> <a href="../Input/input.html" >  Input</li> </a>
+                  <li class="list-links"> <a href="../Lists/lists.html" >  List</li> </a>
+                  <li class="list-links"> <a href="../Rating/rating.html" > Rating</li> </a>
+                  <li class="list-links"> <a href="../Toast/toast.html" > Toast</li> </a>
+                  <li class="list-links"> <a href="../Typography/typography.html" >  Typography</li> </a>
+                  
+              </ul>
+            </div>
+      
+      
+        <div class="doc-content">
+         <div class="content-title" > Input </div>
+         
+         <br> 
+         <div class="content-subtitle" > 
+    
+            Inputs are necessary for user interaction with the website. Inputs are used to take information from the user, and then save the data to the server, accordingly.
+    
+     
+         </div> 
+         <br> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+     <hr> 
+         <div class="content-title" > Label  Input</div> <br> 
+
+        <div class="content-subtitle" >
+            Label input has a label present at the top of the input field.  They can be customized to show error error-message, and change color accordingly.
+        </div>
+         
+
+   <div class="input-box" >
+        <div class="input-container">
+            <label> Username *</label>
+            <input type="text" placeholder="  Enter username">
+        </div> <br>
+        <div class="input-container " >
+            <label> Password *</label>
+            <input id="password-input" type="text" placeholder="  Enter Password" > 
+            <div class="msg">
+                Wrong Password. Check password and try  again.
+            </div>
+        </div>
+
+    </div>
+
+  <br> <br> 
+  <div class="content-title" > HTML</div>
+
+
+    <div class="code-content-div"> 
+           
+        <pre> <code class="code">
+  
+            &lt;div class="input-container"&gt;
+                &lt;label&gt; Username *&lt;/label&gt;
+
+                &lt;input type="text" placeholder="  Enter username"&gt;
+
+            &lt;div&gt; &lt;br&gt;
+
+            &lt;div class="input-container " &gt;
+
+                &lt;label&gt; Password *&lt;/label&gt;
+
+                &lt;input id="password-input" type="text" placeholder="  Enter Password" &&gt; 
+
+                &lt;div class="msg"&gt;
+                    Wrong Password. Check password and try  again.
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        
+          </code> </pre></div>
+
+
+
+        <div class="content-title" > CSS </div>
+
+
+            
+
+    <div class="code-content-div"> 
+           
+        <pre>
+          <code class="code">
+            input[type=text] {
+                background: #fff; 
+                border: 1px solid #999;
+                padding: 0.6rem 0.7rem;
+                float: left;
+                font-size: .8rem;
+                margin: 5px 0;
+                width: 95%;
+                transition: .3s all ease;
+                outline: none;
+                border-radius: 2px;
+           }
+          
+           #password-input{
+                 border: 1px solid red;
+           }
+           
+  
+            
+             
+          </code>
+        
+          </pre>
+          
+        </div>
+       
+         
+        
+         <br> <br> <hr>
+        <div  class="content-title" > 
+          Radio
+        </div> <br>
+
+        <div class="content-subtitle">
+            Radio buttons allow the user to select one option from a set.  
+        </div>
+
+        <div  class="circle-avatar" >
+
+            <div class="radio" >
+                <label for="radio-1">
+                    <input  id="radio-1" name="radio" type="radio" checked>
+                    Checked
+                </label>
+            </div>
+
+
+            <div class="radio" >
+                <label for="radio-2">
+                    <input  id="radio-2" name="radio" type="radio">
+                    Unchecked
+                </label>
+            </div>
+
+
+            <div class="radio" >
+                <label for="radio-3">
+                    <input  id="radio-3" name="radio" type="radio" disabled>
+                    Disabled
+                </label>
+            </div> 
+        </div>
+
+
+
+            <br> <br>
+
+            <div class="content-title" > HTML </div>
+
+
+
+            <div class="code-content-div"> 
+           
+                <pre>
+                  <code class="code">
+          
+                    &lt;div class="radio" &gt;
+                        &lt;label for="radio-1"&gt;
+                            &lt;input  id="radio-1" name="radio" type="radio" checked&gt;
+                            Checked
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+        
+        
+                    &lt;div class="radio" &gt;
+                        &lt;label for="radio-2"&gt;
+                            &lt;input  id="radio-2" name="radio" type="radio"&gt;
+                            Unchecked
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+        
+        
+                    &lt;div class="radio" &gt;
+                        &lt;label for="radio-3"&gt;
+                            &lt;input  id="radio-3" name="radio" type="radio" disabled &gt;
+                            Disabled
+                        &lt;/label&gt;
+                    &lt;/div&gt; &lt;/div&gt;
+        
+        
+                  </code></pre></div>
+
+
+                  <div class="content-title" > CSS</div>
+   
+                  
+                  
+    <div class="code-content-div"> 
+           
+        <pre>
+          <code class="code">
+            input, label{
+                display: flex;
+                align-items: center;
+                margin: 10px;
+                font-size: 1rem;
+            }
+            
+          </code> </pre>
+          
+        </div>
+
+
+        <!-- checkBox input -->
+
+
+        <br> <br> <hr>
+        <div class="content-title" >
+            Checkbox 
+        </div> <br> 
+        <div class="content-subtitle" >
+            Checkboxes allow the user to select one or more items from a set. Checkboxes can be used to turn an option on or off.
+        </div>
+
+
+        <br>
+
+        
+        <div  class="circle-avatar" >
+
+            <div class="radio" >
+                <label for="radio-1">
+                    <input  id="radio-1" name="checkBox" type="checkbox" checked>
+                    Checked
+                </label>
+            </div>
+
+
+            <div class="radio" >
+                <label for="radio-2">
+                    <input  id="radio-2" name="checkBox" type="checkbox">
+                    Unchecked
+                </label>
+            </div>
+
+
+            <div class="radio" >
+                <label for="radio-3">
+                    <input  id="radio-3" name="checkBox" type="checkbox" disabled >
+                    Disabled
+                </label>
+            </div> </div>
+
+
+            <br> <br> 
+            <div class="content-title" > HTML</div> 
+
+
+            <div class="code-content-div"> 
+           
+                <pre>
+                  <code class="code">
+          
+                    &lt;div class="radio" &gt;
+                        &lt;label for="radio-1"&gt;
+                            &lt;input  id="radio-1" name="checkBox" type="checkbox" checked&gt;
+                            Checked
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+        
+        
+                    &lt;div class="radio" &gt;
+                        &lt;label for="radio-2"&gt;
+                            &lt;input  id="radio-2" name="checkBox" type="checkbox"&gt;
+                            Unchecked
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+        
+        
+                    &lt;div class="radio" &gt;
+                        &lt;label for="radio-3"&gt;
+                            &lt;input  id="radio-3" name="checkBox" type="checkbox" disabled &gt;
+                            Disabled
+                        &lt;/label&gt;
+                    &lt;/div&gt; &lt;/div&gt;
+        
+        
+                  </code></pre></div>
+
+
+                  <div class="content-title" > CSS</div>
+   
+                  
+                  
+    <div class="code-content-div"> 
+           
+        <pre>
+          <code class="code">
+            input, label{
+                display: flex;
+                align-items: center;
+                margin: 10px;
+                font-size: 1rem;
+            }
+            
+          </code>
+        
+          </pre>
+          
+        </div>
+
+
+        <br> <br> <hr> <br> 
+
+
+        
+
+
+
+
+
+
+
+        
+    
+    
+    
+    
+    
+
+
+
+ </div> </div> </div>
+
+
+</body>
+</html>

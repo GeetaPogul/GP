@@ -1,0 +1,142 @@
+:root{
+  --hover-color:#f1f1f3;
+}
+
+.card-style-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+  }
+  
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgb(151,140,140) 0px 3px 8px;
+
+  }
+
+
+  .card-image-header{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .card-image{
+     width:17.5rem;
+      height: 12.5rem;
+      border-radius:0.4rem 0.4rem 0 0;
+  }
+  
+  .card-heading{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  
+  
+  .card-btn-and-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+     padding:0 0.5rem 0.2rem 0.5rem;
+  
+  
+  }
+  
+  .card-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-right: auto;
+  }
+  
+  .card-buttons button:hover{
+  background-color: #fdf6f8;
+  }
+  
+  .card-buttons button{
+    padding: 0.4rem;
+    color: indigo;
+    border: 1px solid white;
+    background: white;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    font-weight: bold;
+  
+    }
+    .card-icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      color: black;
+      gap:5px;
+  
+  
+    }
+  
+    .card-icons i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 1.9rem;
+      width: 1.9rem;
+      border: 1rem;
+    }
+    .card-icons i:hover{
+      background-color:var(--hover-) ;
+  }
+  
+
+
+
+
+
+/* simple text card button style */
+
+
+.btn{
+    font-size: 1rem;
+    background-color: white;
+    min-width: 100px;
+    padding: 0.9rem 1.4rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 24%)2px 6px 9px;
+}
+
+button{
+    border-style: none;
+    /* margin-left: 5rem; */
+}
+
+.btn-primary{
+  color: white;
+  background-color: var(--solid-primary-color);
+}
+.btn-secondary{
+    color: var(--solid-primary-color);
+    background-color:white;
+    border: 1px solid var(--solid-primary-color);
+    
+}
+
+.buttons-div{
+    margin-left: 4rem;
+}
+
+.shopping{
+  margin-left: 1.5rem;
+}

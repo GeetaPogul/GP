@@ -1,0 +1,150 @@
+:root{
+    --primary-color:  #6366F1;
+    --solid-primary-color: #ff3f6c;
+    --secondary-color: #ede9fe;
+    --content-color: #333333;
+    --danger-color: #F44336;
+    --success-color:#4CAF50;
+    --warning-color: #FF9800;   
+    --border-color :#d3d3d3;
+}
+
+a{
+    text-decoration: none;
+    color: var(--content-color);
+    
+}
+
+.parent-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.list-links{
+    
+    align-items: center;
+    padding: 1.2rem 1.1rem;
+    font-size: 1.2rem;
+    list-style: none;
+   
+    
+}
+.list-links:hover{
+    
+    background:#ede9fe;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sub-topic-list{
+    height: 40%;
+    width:220px;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.doc-content{
+    
+    padding-left: 2rem;
+    max-width: 700px;   
+}
+
+
+.content-title{
+    color:var(--content-color);
+    font-size: 2.1rem;
+    font-weight: 900;
+    flex: 1 1 0%;
+    display: flex;
+    font-family: 'Short Stack', cursive;
+}
+
+.content-subtitle{
+    line-height: 27px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+   color:var(--content-color);
+}
+
+hr{
+    margin-bottom: 2rem;
+}
+
+.example-box{   
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    border: 1px solid lightgrey;
+    min-height: 100px;
+    width: 95%;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.code{
+   
+    display: block;
+    overflow-x: auto;
+    padding: 0.5rem;
+    color: #abb2bf;
+    background: #282c34;
+    max-width: 750px;
+    border-radius:6px; 
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+
+.circle-avatar{   
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    min-height: 100px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .list-links{
+    
+        align-items: center;
+        padding: 1.2rem 1.5rem;
+        list-style: none;
+        font-size: 14px;
+       
+        
+    }
+    .list-links:hover{
+        
+        background:#ede9fe;
+        cursor: pointer;
+    }
+    .sub-topic-list{
+        height: 40%;
+        width:100px;
+        margin-left: 1rem;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .doc-content{
+    
+            padding-left: 1rem;
+            max-width: 400px; 
+            font-size: 12px;  
+        }
+}

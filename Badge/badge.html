@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../Badge/badge.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://kit.fontawesome.com/c9ffd32afb.js" crossorigin="anonymous"> </script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+          <div class="nav-section left-nav-links">
+            <div>
+              <a class="nav-a-link" href="../index.html" > Geeta UI</a>
+             </div>
+          </div>
+         
+          <div class="nav-section right-nav-links">
+  
+              <ul> 
+                  <li class="nav-li-links">
+                    <span >  <a class="nav-a-link" href="../index.html">Home</a> </span>
+                  </li>
+       
+                   <li  class="nav-li-links">
+                    <span > <a class="nav-a-link" href="../Docs/docs.html"> Docs</a>   </span>
+                   </li>
+       
+       
+                   <li  class="nav-li-links">   <span >  <button class="theme-button" id="theme-btn" > 
+                      <i class='fas fa-moon'> </i>   </button>
+                   </li>
+               </ul>
+         
+       </div>
+      </nav>
+
+      <br> <br>
+
+
+      <div class="parent-container">
+
+    
+        <div class="slidebar">
+
+          <ul class="sub-topic-list" > 
+                <h2 >Components</h2>
+        
+                <li class="list-links"> <a href="../Avatar/avatar.html" >   Avatar</li> </a>
+                <li class="list-links"> <a href="../Alert/alert.html" >  Alert</li> </a>
+                <li class="list-links"> <a href="../Badge/badge.html" >  Badge</li> </a>
+                <li class="list-links"> <a href="../Button/button.html" >  Button</li> </a>
+                <li class="list-links"> <a href="../Cards/cards.html" >  Cards</li> </a>
+                <li class="list-links"> <a href="../Image/image.html" >  Image</li> </a>
+                <li class="list-links"> <a href="../Input/input.html" >  Input</li> </a>
+                <li class="list-links"> <a href="../Lists/lists.html" >  List</li> </a>
+                <li class="list-links"> <a href="../Rating/rating.html" > Rating</li> </a>
+                <li class="list-links"> <a href="../Toast/toast.html" > Toast</li> </a>
+                <li class="list-links"> <a href="../Typography/typography.html" >  Typography</li> </a>
+                
+            </ul>
+          </div>
+      
+      
+        <div class="doc-content">
+         <div class="content-title" > Badge</div>
+         
+         <br> 
+         <div class="content-subtitle" > 
+    
+            Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used.
+
+    
+       </div>
+    
+    
+     <hr> 
+         <div class="content-title" > Profile Badge</div>
+
+         <div class="content-subtitle" > <br>
+            Profile Badge is used to show the current status of a user.
+         </div> <br>
+    
+         <div class="circle-avatar ">
+ 
+
+         <img class="avatar img " src="avatar1.jpg"> 
+         <div class="online"> </div>
+
+           <img class="avatar img" src="avatar2.jpg"> 
+           <div class="offline" > </div>
+
+          <img class="avatar img" src="avatar3.jpg">
+          <div class="do-not-disturb" > </div>
+    
+          
+         </div>
+    
+          <br>
+
+         <div class="content-title" >
+           HTML
+         </div>
+    
+         <div class="code-content-div"> 
+           
+          <pre>
+            <code class="code">
+    
+              <-- Using the 'avatar' class name -->
+    
+    
+              &lt;img class="avatar badge-box" src="avatar1.jpg" &gt;
+              &lt;div class="online" &gt;   &lt;/div&gt;
+    
+              &lt;img class="avatar badge-box" src="avatar2.jpg" &gt;
+              &lt;div class="online" &gt;   &lt;/div&gt;
+
+              &lt;img class="avatar badge-box" src="avatar3.jpg" &gt;
+              &lt;div class="online" &gt;   &lt;/div&gt;
+    
+              
+            </code>
+          
+            </pre>
+            
+          </div>
+          <br> 
+
+          <div class="content-title" >
+           CSS
+          </div>
+
+
+          <div class="code-content-div"> 
+           
+            <pre>
+              <code class="code">
+      
+                <-- Using the 'online' class name -->
+      
+      
+               .online{
+
+                    position: relative;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: green;
+                    border:2px solid white;
+                    right: 28px;
+                    top: 25px;
+
+               }
+      
+                
+              </code>
+            
+              </pre>
+              
+            </div>
+            <br> 
+
+
+
+            <div class="content-title "> 
+              Number Badge
+            </div>
+           <br> 
+            <div class="content-subtitle" >
+                Number Badge is used to show the no. of items present in the parent component.
+            </div>
+
+            <hr>
+
+
+            <div class="circle-avatar ">
+ 
+       
+                <span class="badge-icon fas fa-home">
+                    
+                </span>
+                <span class="badge badge-on-icon home"> 16</span>
+           
+                <br> <br> <br>
+                <span class="badge-icon fas fa-shopping-cart">
+                    
+                </span>
+                <span class="badge badge-on-icon"> 23</span>
+
+            </div>
+
+            <br> 
+
+            <div class="content-title" >
+                HTML
+            </div>
+
+
+
+
+            <div class="code-content-div"> 
+           
+                <pre>
+                  <code class="code">
+          
+                    <-- Using the badge, badge-icon class name -->
+          
+          
+                    &lt;span class="badge-icon fas fa-home" &gt;  &lt;/span&gt;
+
+                    &lt;span class="badge badge-on-icon home" &gt;  16  &lt;/span&gt;
+
+
+          
+                    &lt;span class="badge-icon fas fa-home" &gt;  &lt;/span&gt;
+
+                    &lt;span class="badge badge-on-icon home" &gt;  23  &lt;/span&gt;
+                    
+                  </code>
+                
+                  </pre>
+                  
+                </div>
+                <br> 
+
+
+
+
+                <div class="content-title" >
+                   CSS
+                </div>
+    
+    
+    
+    
+                <div class="code-content-div"> 
+               
+                    <pre>
+                      <code class="code">
+              
+                        <-- Using the badge , badge-on-icon class name -->
+
+
+                        .badge-icon{
+    
+                            font-size:2.5rem;
+                        }
+
+                        .badge{
+                            position: absolute;
+                          text-align: center;
+                          width: 25px;
+                          height: 25px;
+                          line-height: 25px;
+                          font-size: medium;
+                          border-radius: 50%;
+                          color: white;
+                        }
+
+                        .badge-on-icon{
+                            position: relative;
+                            background: var( --solid-primary-color);
+                            top:-15px;
+                            right:14px;
+                            padding: 0.2rem;
+                        
+                        }
+                        
+                        
+                      </code>
+                    
+                      </pre>
+                      
+                    </div>
+                    <br> 
+
+
+                    <br>  <hr> 
+
+
+                    <div class="content-title" >
+                        Text Badge
+                    </div> <br> 
+
+
+
+                    <div class="circle-avatar ">
+ 
+                        <div class="content-subtitle">
+                            Button with a badge on the left
+                            <button class="primary-btn badge-btn" > 
+
+                                <span class=" badge badge-on-btn" > 8 </span>
+                                Action </button >
+
+
+
+                <br>
+
+                                Button with a badge on the right
+                                <button class="primary-btn badge-btn" > 
+    
+                                    <span class=" badge badge-on-btn-right" > 25</span>
+                                    Action </button >
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="content-title" >
+                HTML
+            </div>
+
+
+
+
+            <div class="code-content-div"> 
+           
+                <pre>
+                  <code class="code">
+          
+                    <-- Using the badge, badge-icon class name -->
+          
+                    Button with a badge on the left
+                    &lt;button class="primary-btn badge-btn" &gt;
+
+                         &lt;span class=" badge badge-on-btn" &gt;  8  &lt;/span&gt; 
+                         
+                      Action
+
+                    &lt;button&gt;
+
+                    Button with a badge on the right
+                    &lt;button class="primary-btn badge-btn" &gt;
+
+                         &lt;span class=" badge badge-on-btn" &gt;  25  &lt;/span&gt; 
+                         
+                      Action
+
+                    &lt;button&gt;
+                    
+                  </code>
+                
+                  </pre>
+                  
+                </div>
+                <br> 
+
+
+
+
+                <div class="content-title" >
+                   CSS
+                </div>
+    
+    
+    
+    
+                <div class="code-content-div"> 
+               
+                    <pre>
+                      <code class="code">
+              
+                        <-- Using the primary-btn,  badge-btn, badge-on-btn  class name -->
+
+
+                        .primary-btn
+                        {
+                           background-color: var(--warning-color);
+                           padding: 8px 16px;
+                           margin: 1rem;
+                           font-size: large;
+                           color: white;
+                           border: none;
+                           font-weight: bold;
+                           border-style: none;
+                           border-radius: 6px;
+                           cursor: pointer;
+                        }
+                        
+                        .primary-btn:hover {
+
+                            background: var(--secondary-color);
+                            box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+                            color: var(--content-color);
+                        }
+                        
+                        .badge-btn{
+
+                            position: relative;
+
+                        }
+                        
+                        .badge-on-btn  {
+
+                            background: var(--danger-color);
+                            left: -9px;
+                            top:-12px;
+                        }
+                        
+                        
+                        
+                      </code>
+                    
+                      </pre>
+                      
+                    </div>
+                    <br> 
+
+
+        
+                    
+
+
+
+ </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+@import url(../CSS/navbar.css);
+
+@import url(../CSS/slidebar.css);
+
+
+.alert-box{
+    width: 90%;
+    height: 3.3rem;
+    margin:0.2rem;
+    border-radius: 4px;
+    padding: 1rem 0 0 0.8rem;
+}
+
+.primary{
+    background-color: var(--solid-primary-color);
+}
+
+.error{
+    background-color: var(--danger-color);
+}
+
+.success{
+    background-color: var(--success-color);
+}
+
+.warning{
+    background-color: var(--warning-color);
+}
+
+.outline-primary{
+    border: 1px solid var(--solid-primary-color);
+    color: var(--solid-primary-color);
+    background-color: white;
+}
+
+.outline-danger{
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+    background-color: white;
+}
+
+.outline-success{
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+    background-color: white;
+}
+
+.outline-warning{
+    border: 1px solid var(--warning-color);
+    color: var(--warning-color);
+    background-color: white;
+}
