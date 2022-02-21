@@ -1,11 +1,8 @@
-<p align="center"> 
-    <img height="160" src="./images/bg-img.svg" />
-    <br/>
-    <br/>  
-    <!-- <img height="60" src="" /> -->
-    <h3 align="center">CODE LESS, STYLE MORE</h3>
-    <p align="center"><a href="https://mor-ui.vercel.app/">DEMO</a></p>
-</p>
+
+<h3 align="center"> Design your dream project
+better and faster.</h3>
+    
+
 
 ## **About The Project**
 
