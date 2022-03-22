@@ -7,6 +7,8 @@
     --success-color:#4CAF50;
     --warning-color: #FF9800;   
     --border-color :#d3d3d3;
+    --link-hover-color: #f6d6dd;
+    
 }
 
 a{
@@ -24,22 +26,24 @@ a{
 .list-links{
     
     align-items: center;
-    padding: 1.2rem 1.1rem;
-    font-size: 1.2rem;
+    padding: 1.1rem 1.3rem;
+    font-size: 1.3rem;
     list-style: none;
+    width: 6rem
    
     
 }
 .list-links:hover{
     
-    background:#ede9fe;
+    /* background:#ede9fe; */
+    background-color: var(--link-hover-color);
     border-radius: 4px;
     cursor: pointer;
 }
 .sub-topic-list{
     height: 40%;
     width:220px;
-    margin-left: 10rem;
+    margin-left: 8rem;
     display: flex;
     flex-direction: column;
 
