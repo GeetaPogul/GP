@@ -7,6 +7,7 @@
     --success-color:#4CAF50;
     --warning-color: #FF9800;   
     --border-color :#d3d3d3;
+    --link-hover-color:#fbc0ce; 
 }
 
 a{
@@ -24,15 +25,16 @@ a{
 .list-links{
     
     align-items: center;
-    padding: 1.2rem 1.1rem;
+    padding: 1.2rem 1.2rem;
     font-size: 1.2rem;
     list-style: none;
-   
+    width: 6rem;
     
 }
 .list-links:hover{
     
-    background:#ede9fe;
+  
+    background-color: var(--link-hover-color);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -78,9 +80,6 @@ hr{
     border: 1px solid lightgrey;
     min-height: 100px;
     width: 95%;
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
     padding: 1rem;
     margin-bottom: 1.5rem;
     
