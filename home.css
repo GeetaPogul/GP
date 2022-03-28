@@ -1,6 +1,9 @@
-@import url(../CSS/navbar.css);
+/* @import url(../CSS/navbar.css);
+@import url(./CSS/navbar.css); */
+@import url(./CSS/main.css);
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); */
 
-@import url(./CSS/navbar.css);
+
 
 
 main{
@@ -34,14 +37,14 @@ main{
 
 
 footer{
-    position: relative;
-    top: 5.3rem;
+    position: absolute;
+    bottom: 0rem;
    box-shadow: rgb(0 0 0 / 24%)2px 4px 5px;
-    /* top: 3.9rem;  */
     background-color: var(--solid-primary-color);
     display: flex;
     text-align: center;
     align-items: center;
+    width: 100%;
     justify-content: center;
    
 }
@@ -77,6 +80,8 @@ button{
 .btn-primary{
   color: white;
   background-color: var(--solid-primary-color);
+  border: 1px solid var(--solid-primary-color);
+    
 }
 .btn-secondary{
     color: var(--solid-primary-color);
