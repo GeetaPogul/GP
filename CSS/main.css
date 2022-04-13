@@ -7,12 +7,11 @@
 @import url(../CSS/navbar.css);
 @import url(../CSS/slidebar.css);
 @import url(../Docs/docs.css);
-@import url(../Grid/grid.css);
 @import url(../home.css);
 @import url(../Image/image.css);
 @import url(../Input/input.css);
 @import url(../Lists/lists.css);
+@import url(../Navigation/nav.css);
 @import url(../Rating/rating.css);
 @import url(../Toast/toast.css);
 @import url(../Typography/typography.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
